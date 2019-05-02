@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('font/web fonts/macroman/OpenSans-Regular-webfont.eot');
+    src: url('font/web fonts/macroman/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/web fonts/macroman/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('font/web fonts/macroman/OpenSans-Regular-webfont.woff') format('woff'),
+         url('font/web fonts/macroman/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('font/web fonts/macroman/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, 
+.grid-container { 
+    height: 100%;
+
+}
+
+body{
+    width: 60%;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #84898e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23e8676b' fill-opacity='0.44'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.grid-container * { 
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 26% 40%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: "photo info info" "link link link";
+    background: linear-gradient(#3d4451,#e8676b)
+}
+
+.photo { 
+    grid-area: photo;
+}
+
+.photo img{
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.info { 
+    grid-area: info;
+    font-family: 'open_sansregular';
+}
+
+h1,
+h2{
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: #d4d4d5;
+}
+
+h1{
+    margin-top: 10px;
+}
+
+h2{
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #dedede;
+}
+
+.list{
+    list-style: none;
+    display: block;
+}
+
+.attribut{
+    display: table;
+    float: none;
+    width: 50%;
+    margin-bottom: 13px;
+}
+
+.titre{
+    color: #d4d4d5;
+}
+
+.element{
+    color: #84898e;
+    display: inline-block;
+    width: 300px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+.link { 
+    grid-area: link;
+    position: relative;
+}
+
+.social{
+    list-style: none;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    color: #3d4451;
+    margin-left: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-10%);
+}
